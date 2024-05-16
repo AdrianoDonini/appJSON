@@ -7,7 +7,7 @@ import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 class Products extends Component{ 
   render(){ 
-    const {id, name, description,price, image} = this.props.record; 
+    const {id, name, description,price, image} = this.props.data; 
     return( 
       <View> 
         <View style={styles.card}> 
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   }, 
 
   capa:{ 
-    height: 250, 
+    height: 300, 
     zIndex: 2, 
   }, 
 

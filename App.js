@@ -33,11 +33,11 @@ class App extends Component {
 
   async componentDidMount(){ 
 
-    const response = await api.get('r-api/?api=products'); 
-
+    const response = await api.get('/v3/b/663bffe4ad19ca34f8667cc0'); 
+    console.log(response.data.record.products);
     this.setState({ 
 
-      products: response.record, 
+      products: response.data.record.products, 
 
       loading: false 
 
