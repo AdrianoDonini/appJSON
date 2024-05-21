@@ -8,7 +8,7 @@ import Products from './src/products/products';
 
  
  
-
+let adriano;
 class App extends Component { 
 
  
